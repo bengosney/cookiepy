@@ -22,7 +22,7 @@ cat << 'EOF' > "${SRCDIR}/makefile"
 .PHONY := install, install-dev, help, tools, clean
 .DEFAULT_GOAL := install-dev
 
-INS=$(wildcard requirements.*.in)
+INS=$(wildcard requirements*.in)
 REQS=$(subst in,txt,$(INS))
 
 help:
